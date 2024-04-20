@@ -1,0 +1,16 @@
+import { MdOutlineCheckCircle } from 'react-icons/md';
+
+type FormSuccessProps = {
+  message?: string;
+};
+
+export const FormSuccess = ({ message }: FormSuccessProps) => {
+  if (!message) return null;
+
+  return (
+    <div className="bg-emerald-500/70 p-3 rounded-md flex items-center gap-x-2 text-sm">
+      <MdOutlineCheckCircle className="h-4 w-4" />
+      <p>{message}</p>
+    </div>
+  );
+};

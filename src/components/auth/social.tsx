@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import { FcGoogle } from 'react-icons/fc'
-import { Button } from '@/components/ui/button'
-import { FaGithub } from 'react-icons/fa'
+import { FcGoogle } from 'react-icons/fc';
+import { Button } from '@/components/ui/button';
+import { FaGithub } from 'react-icons/fa';
 
 export const Social = () => {
   return (
@@ -14,7 +14,7 @@ export const Social = () => {
         <FaGithub />
       </Button>
     </div>
-  )
-}
+  );
+};
 
-export default Social
+export default Social;

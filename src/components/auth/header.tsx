@@ -1,8 +1,8 @@
-import { Lock } from 'lucide-react'
+import { Lock } from 'lucide-react';
 
 type HeaderProps = {
-  label: string
-}
+  label: string;
+};
 
 export const Header = ({ label }: HeaderProps) => {
   return (
@@ -13,7 +13,7 @@ export const Header = ({ label }: HeaderProps) => {
       </h1>
       <p className="text-muted-foreground text-sm">{label}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

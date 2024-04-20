@@ -1,27 +1,32 @@
-'use client'
+'use client';
 
-import { Card, CardContent, CardHeader, CardFooter } from '@/components/ui/card'
-import { Header } from '@/components/auth/header'
-import { Social } from '@/components/auth/social'
-import { BackButton } from '@/components/auth/back-button'
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardFooter,
+} from '@/components/ui/card';
+import { Header } from '@/components/auth/header';
+import { Social } from '@/components/auth/social';
+import { BackButton } from '@/components/auth/back-button';
 
 type CardWrapperProps = {
-  children: React.ReactNode
-  headerLabel: string
-  backButtonLabel: string
-  backButtonHref: string
-  showSocial?: boolean
-}
+  children: React.ReactNode;
+  headerLabel: string;
+  backButtonLabel: string;
+  backButtonHref: string;
+  showSocial?: boolean;
+};
 
 export const CardWrapper = ({
   children,
   headerLabel,
   backButtonLabel,
   backButtonHref,
-  showSocial
+  showSocial,
 }: CardWrapperProps) => {
   return (
-    <Card className="w-[400px] shadow-md">
+    <Card className="w-[400px] shadow-md bg-white bg-opacity-35 dark:bg-black dark:bg-opacity-45">
       <CardHeader>
         <Header label={headerLabel} />
       </CardHeader>
@@ -35,5 +40,5 @@ export const CardWrapper = ({
         <BackButton label={backButtonLabel} href={backButtonHref} />
       </CardFooter>
     </Card>
-  )
-}
+  );
+};

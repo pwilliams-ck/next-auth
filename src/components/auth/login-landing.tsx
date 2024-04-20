@@ -1,7 +1,6 @@
 import { CardWrapper } from '@/components/auth/card-wrapper';
 import { LoginButton } from '@/components/auth/login-button';
 import { Button } from '../ui/button';
-import { DarkModeToggle } from '../theme-toggle';
 
 export const LoginLanding = () => {
   return (
@@ -10,7 +9,7 @@ export const LoginLanding = () => {
       backButtonLabel="About us"
       backButtonHref="/auth/register"
     >
-      <div className="flex justify-between">
+      <div className="flex justify-between my-4">
         <p>Register now, and request access to the beta. 🚀</p>
         <LoginButton>
           <Button className="mt-1 ml-auto" size="lg">
@@ -18,7 +17,6 @@ export const LoginLanding = () => {
           </Button>
         </LoginButton>
       </div>
-      <DarkModeToggle />
     </CardWrapper>
   );
 };

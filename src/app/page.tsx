@@ -1,7 +1,4 @@
-import { LoginButton } from '@/components/auth/login-button';
 import { LoginLanding } from '@/components/auth/login-landing';
-import { Button } from '@/components/ui/button';
-import { Lock } from 'lucide-react';
 
 export default function Home() {
   return (

@@ -9,6 +9,7 @@ import {
 import { Header } from '@/components/auth/header';
 import { Social } from '@/components/auth/social';
 import { BackButton } from '@/components/auth/back-button';
+import { DarkModeToggle } from '../theme-toggle';
 
 type CardWrapperProps = {
   children: React.ReactNode;
@@ -28,7 +29,12 @@ export const CardWrapper = ({
   return (
     <Card className="w-[400px] shadow-md bg-white bg-opacity-35 dark:bg-black dark:bg-opacity-45">
       <CardHeader>
-        <Header label={headerLabel} />
+        <div className="flex">
+          <Header label={headerLabel} />
+          <div className="ml-auto">
+            <DarkModeToggle />
+          </div>
+        </div>
       </CardHeader>
       <CardContent>{children}</CardContent>
       {showSocial && (

@@ -1,6 +1,6 @@
 # Auth
 
-This project is currently in development. it is a modern boilerplate for
+This project is currently in development, it is a modern boilerplate for
 building secure Next.js applications.
 
 ## Features

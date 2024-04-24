@@ -9,7 +9,7 @@ const RegisterPage = () => {
       <RegisterForm />
       <AlertPopup
         title="Heads up!"
-        description="Auth is currently in beta and is actively being worked on."
+        description="Auth is currently in beta and is actively being worked on, come back soon!"
         icon={<LucideConstruction className="h-6 w-6" />}
       />
     </div>

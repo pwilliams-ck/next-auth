@@ -11,8 +11,8 @@ export const AlertPopup = ({ title, description, icon }: AlertPopupProps) => {
   return (
     <Alert className="my-12 w-42 bg-white/30 dark:bg-black/35 shadow-md">
       {icon}
-      <AlertTitle className="ml-4">{title}</AlertTitle>
-      <AlertDescription className="ml-4">{description}</AlertDescription>
+      <AlertTitle className="ml-2">{title}</AlertTitle>
+      <AlertDescription className="ml-2">{description}</AlertDescription>
     </Alert>
   );
 };

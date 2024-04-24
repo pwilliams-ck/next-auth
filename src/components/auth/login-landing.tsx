@@ -10,7 +10,7 @@ export const LoginLanding = () => {
       backButtonHref="/"
     >
       <div className="flex justify-between my-4">
-        <p>Register now, and request access to the beta. 🚀</p>
+        <p>Register now, and get access to the beta. 🚀</p>
         <Link href="/auth/register">
           <Button className="mt-1 ml-auto" size="lg">
             Sign Up

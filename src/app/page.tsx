@@ -1,6 +1,6 @@
 import { LoginLanding } from '@/components/auth/login-landing';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { PiFlyingSaucer } from 'react-icons/pi';
+import { LucideConstruction } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -8,11 +8,10 @@ export default function Home() {
       <div className="flex flex-col items-center">
         <LoginLanding />
         <Alert className="my-12 w-42 bg-white/30 dark:bg-black/35 shadow-md">
-          <PiFlyingSaucer className="h-8 w-8" />
+          <LucideConstruction className="h-8 w-8" />
           <AlertTitle className="ml-4">Heads up!</AlertTitle>
           <AlertDescription className="ml-4">
-            Please excuse our dust, Auth is currently in beta and is actively
-            being worked on.
+            Auth is currently in beta and is actively being worked on.
           </AlertDescription>
         </Alert>
       </div>

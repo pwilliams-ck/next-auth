@@ -24,6 +24,10 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   },
   callbacks: {
     async signIn({ user, account }) {
+      console.log({
+        user,
+        account,
+      });
       // Allow Oauth without email verification. This only requires email
       // verification for credentials based users.
       if (account?.provider !== 'credentials') return true;
@@ -32,6 +36,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
       // Prevent sign in without email verification
       if (!existingUser?.emailVerified) return false;
+
+      // TODO: Add MFA check
 
       return true;
     },

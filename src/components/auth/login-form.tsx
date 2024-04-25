@@ -50,8 +50,7 @@ export const LoginForm = () => {
     startTransition(() => {
       login(values).then((data) => {
         setError(data?.error);
-        // TODO: Set up with MFA
-        // setSuccess(data?.success);
+        setSuccess(data?.success);
       });
     });
   };

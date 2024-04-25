@@ -6,12 +6,12 @@ export const generateVerificationToken = async (email: string) => {
   const token = uuidv4();
   const expires = new Date(new Date().getTime() + 3600 + 1000); // 1 hour
 
-  const ExistingToken = await getVerificationTokenByEmail(email);
+  const existingToken = await getVerificationTokenByEmail(email);
 
-  if (ExistingToken) {
+  if (existingToken) {
     await db.verificationToken.delete({
       where: {
-        id: ExistingToken.id,
+        id: existingToken.id,
       },
     });
   }

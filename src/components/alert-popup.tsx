@@ -9,7 +9,7 @@ type AlertPopupProps = {
 
 export const AlertPopup = ({ title, description, icon }: AlertPopupProps) => {
   return (
-    <Alert className="my-12 w-42 bg-white/30 dark:bg-black/35 shadow-md">
+    <Alert className="my-12 w-42 bg-white/45 dark:bg-black/45 shadow-md">
       {icon}
       <AlertTitle className="ml-2">{title}</AlertTitle>
       <AlertDescription className="ml-2">{description}</AlertDescription>

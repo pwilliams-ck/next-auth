@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useState } from 'react';
-import { BeatLoader } from 'react-spinners';
+import { RingLoader } from 'react-spinners';
 import { useSearchParams } from 'next/navigation';
 
 import { newVerification } from '@/actions/new-verification';
@@ -46,7 +46,9 @@ export const NewVerificationForm = () => {
       backButtonHref="/auth/login"
     >
       <div className="flex items-center w-full justify-center">
-        {!success && !error && <BeatLoader />}
+        {!success && !error && (
+          <RingLoader speedMultiplier={0.8} className="dark:text-white" />
+        )}
         <FormSuccess message={success} />
         {!success && <FormError message={error} />}
       </div>

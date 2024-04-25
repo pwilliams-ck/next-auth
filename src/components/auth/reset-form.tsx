@@ -21,7 +21,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { FormError } from '@/components/form-error';
 import { FormSuccess } from '@/components/form-success';
-import { login } from '@/actions/login';
+import { reset } from '@/actions/reset';
 
 export const ResetForm = () => {
   const [error, setError] = useState<string | undefined>('');
@@ -41,12 +41,12 @@ export const ResetForm = () => {
 
     console.log({ values });
 
-    // startTransition(() => {
-    //   login(values).then((data) => {
-    //     setError(data?.error);
-    //     setSuccess(data?.success);
-    //   });
-    // });
+    startTransition(() => {
+      reset(values).then((data) => {
+        setError(data?.error);
+        setSuccess(data?.success);
+      });
+    });
   };
 
   return (
